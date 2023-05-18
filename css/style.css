@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000000;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.todo_app {
+    padding-bottom: 20px;
+
+}
+.title {
+    font-size: 60px;
+    color: #ffee00;
+    text-align: center;
+}
+.interface{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.buttons_filter{
+    display: flex;
+    column-gap: 15px;
+}
+.btn_filter{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #ffee00;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn_filter_active{
+    color: #000000;
+    background-color: #ffee00;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+.input {
+    outline: none;
+    border: none;
+    width: 450px;
+    height: 30px;
+    color: #ffee00;
+    background-color: transparent;
+    border-bottom: solid 2px #b7babd;
+    transition: ease 1s;
+}
+.input:focus{
+    border-bottom: solid 2px #ffee00;
+}
+.input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #b7babd;
+    transition: ease 1s;
+}
+.input:focus::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #ffee00;
+}
+.btn_add_task{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #b7babd;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+.btn_add_task:hover{
+    color: #ffee00;
+}
+.task_list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: transparent;
+    padding: 15px;
+}
+.task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: rgba(30, 30, 28, 0.8);
+    padding: 10px;
+    list-style-type: none;
+}
+.task_text{
+    font-size: 30px;
+    padding-right: 45px;
+}
+.task_text_done{
+    font-size: 30px;
+    color: #b7babd;
+    text-decoration: line-through;
+}
+.buttins{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translateX(-20%);
+    display: flex;
+    column-gap: 5px;
+    display: none;
+}
+.btn_status,.btn_delete{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn_status img,
+.btn_delete img{
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+.task:hover .buttins{
+    display: flex;
+}
+.hidenn{
+    display: none;
+}
+/* * Медиа запросы */
